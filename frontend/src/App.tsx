@@ -38,6 +38,23 @@ function App() {
               <img className='h-8' src={google} alt="google for startup" />
             </div>
           </div>
+
+          <div className="flex justify-center mt-18 rounded-lg">
+            <iframe
+              width="770"
+              height="450"
+              src="https://www.youtube.com/embed/0zDjmBjaKTQ?si=Ya2kxQvJR-Ggmzkn"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen>
+              </iframe>
+          </div>
+
+          <div className='mt-29'>
+            <p className='text-4xl font-medium flex justify-center'>Get ready for</p>
+            <p className='text-[#fb7124] text-5xl font-bold mt-4 flex justify-center'>Prelims & Mains</p>
+          </div>
         </div>
     </>
   )
