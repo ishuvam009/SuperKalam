@@ -55,6 +55,10 @@ function App() {
             <p className='text-4xl font-medium flex justify-center'>Get ready for</p>
             <p className='text-[#fb7124] text-5xl font-bold mt-4 flex justify-center'>Prelims & Mains</p>
           </div>
+
+          <div>
+            
+          </div>
         </div>
     </>
   )
