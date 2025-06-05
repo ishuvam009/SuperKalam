@@ -56,7 +56,7 @@ function App() {
             <p className='text-[#fb7124] text-5xl font-bold mt-4 flex justify-center'>Prelims & Mains</p>
           </div>
 
-          <div className='flex justify-center'>
+          <div className='flex justify-center text-4xl font-medium mt-20'>
             <p className='font-'>Focused {' '}
               <span className='text-[#fb7124]'>Learning Program</span>
             </p>
