@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import gridImg from './assets/grid-bg.svg';
 import yc from './assets/y-combinator.jpg';
 import google from './assets/google-for-startups.jpg';
+import IconCom from './components/IconCom';
 
 function App() {
 
@@ -55,6 +56,8 @@ function App() {
             <p className='text-4xl font-medium flex justify-center'>Get ready for</p>
             <p className='text-[#fb7124] text-5xl font-bold mt-4 flex justify-center'>Prelims & Mains</p>
           </div>
+
+          <IconCom />
 
           <div className='flex justify-center text-4xl font-medium mt-20'>
             <p className='font-'>Focused {' '}
