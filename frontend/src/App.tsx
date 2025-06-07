@@ -4,6 +4,7 @@ import gridImg from './assets/grid-bg.svg';
 import yc from './assets/y-combinator.jpg';
 import google from './assets/google-for-startups.jpg';
 import IconCom from './components/IconCom';
+import { FocusBatch } from './components/FocuBatch';
 
 function App() {
 
@@ -62,6 +63,14 @@ function App() {
           <div className='flex justify-center text-4xl font-medium mt-20'>
             <p className='font-'>Focused {' '}
               <span className='text-[#fb7124]'>Learning Program</span>
+            </p>
+          </div>
+
+          <FocusBatch />
+
+          <div className='text-5xl font-medium flex justify-center mt-30'>
+            <p>Inspiring {' '} 
+              <span className='text-[#fb7124]'>Journeys </span> 
             </p>
           </div>
         </div>
