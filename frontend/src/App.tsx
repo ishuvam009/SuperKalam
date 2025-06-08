@@ -80,6 +80,11 @@ function App() {
           <p>What students say about <br />
             <span className='bg-gradient-to-r bg-clip-text text-transparent from-[#F87424] to-[#FE3E01] flex justify-center mt-2'>SUPER Plan <img className='h-10' src={rocImg} alt="rocket Icon" /></span>
           </p>
+        </div>
+
+        <div className='flex gap-x-4'>
+          <ReviewCard />
+          <ReviewCard />
           <ReviewCard />
         </div>
       </div>
