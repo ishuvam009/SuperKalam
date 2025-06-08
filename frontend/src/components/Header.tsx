@@ -9,7 +9,7 @@ export const Header = () => {
             <p className='text-xl'>SuperKalam</p>
           </div>
           <div className='flex items-center gap-x-12 pt-4 pr-20'>
-            <p className='text-[#3280F6] text-lg font-medium'>Explore Batches</p>
+            <p className='text-[#3280F6] text-lg font-medium hover:bg-blue-50 hover:rounded-4xl hover:p-1'>Explore Batches</p>
             <button className='text-[#3280F6] text-lg font-medium border border-[#3280F6]-1 px-3 py-2 rounded-lg hover:text-white hover:bg-[#3280F6]'>Login</button>
           </div>
         </div>
