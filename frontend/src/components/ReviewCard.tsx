@@ -1,11 +1,13 @@
 import starImg from '../assets/review-star.png';
 
 export const ReviewCard = () => {
-    const rating = 4;
+    const apiRating = 4;
+    const maxRating = 5;
+    let rating = apiRating > maxRating ? maxRating : apiRating;
 
     return (
         <>
-            <div className='max-w-sm w-full p-4 border-slate-400 mx-auto mt-20 mb-20 shadow-xl rounded-md flex flex-col gap-y-4 cursor-pointer hover:bg-orange-100 hover:scale-105 hover:border hover:border-orange-500'>
+            <div className='max-w-sm w-full p-4 border-slate-400 mx-auto shadow-xl rounded-md flex flex-col gap-y-4 cursor-pointer hover:bg-orange-100 hover:scale-105 hover:border hover:border-orange-500'>
                 <div>
                     <div className='flex gap-1 mb-2'>
                         {[...Array(rating)].map((_,i) =>(

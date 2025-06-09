@@ -82,7 +82,7 @@ function App() {
           </p>
         </div>
 
-        <div className='flex gap-x-4'>
+        <div className='flex flex-col md:flex-row gap-y-10 md:gap-x-4 mt-20 mb-20 mx-5 '>
           <ReviewCard />
           <ReviewCard />
           <ReviewCard />
