@@ -7,6 +7,7 @@ import IconCom from './components/IconCom';
 import { FocusBatch } from './components/FocuBatch';
 import rocImg from './assets/rocket-emoji.png';
 import { ReviewCard } from './components/ReviewCard';
+import communityImg from './assets/community.webp'
 
 function App() {
 
@@ -86,6 +87,17 @@ function App() {
           <ReviewCard />
           <ReviewCard />
           <ReviewCard />
+        </div>
+
+        <div className='mt-20'>
+          <div className='flex justify-center'>
+            <img className='h-40' src={communityImg} alt="student-community" />
+          </div>
+          <div className='mt-8 flex flex-col items-center'>
+            <p className='text-3xl font-medium'>You are not alone in this journey</p>
+            <p className='text-slate-500 mt-4'>Meet 35,000+ aspirants and access handwritten notes, mind-maps, and practice with Daily Targets</p>
+            <button className='bg-blue-500 text-white text-xl font-medium rounded-md px-4 py-2 mt-6 cursor-pointer'>Join Community</button>
+          </div>
         </div>
       </div>
     </>
