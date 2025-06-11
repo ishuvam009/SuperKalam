@@ -8,6 +8,8 @@ import { FocusBatch } from './components/FocuBatch';
 import rocImg from './assets/rocket-emoji.png';
 import { ReviewCard } from './components/ReviewCard';
 import communityImg from './assets/community.webp'
+import lastPic from './assets/lastPic.webp'
+import { Footer } from './components/Footer';
 
 function App() {
 
@@ -99,6 +101,21 @@ function App() {
             <button className='bg-blue-500 text-white text-xl font-medium rounded-md px-4 py-2 mt-6 cursor-pointer'>Join Community</button>
           </div>
         </div>
+
+        <div className='flex justify-center w-full mb-20 mt-20'>
+            <div className='flex bg-[#FFF0D9] max-w-5xl justify-center gap-x-8 pl-12 pr-6 pt-20 pb-10 rounded-xl'>
+            <div>
+              <img className='h-70 w-180' src={lastPic} alt="logo" />
+            </div>
+            <div>
+              <p className='text-4xl font-medium'>Discover your learning potential with <span className='text-blue-500'>SuperKalam</span></p>
+              <p className='text-xl'>Start your preparation for UPSC exam. Ask your first question now.</p>
+              <button className='mt-6 px-6 py-2 bg-[#FB7124] hover:bg-[#e26620] text-white text-xl font-medium rounded-md cursor-pointer'>Start Now - it's FREE</button>
+            </div>
+          </div>
+        </div>
+
+        <Footer />
       </div>
     </>
   )
