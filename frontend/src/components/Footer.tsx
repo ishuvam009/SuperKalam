@@ -25,9 +25,31 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="flex gap-x-30 mr-40 p-4 mt-10">
-                    <div className="text-xl font-medium">COMPANY</div>
-                    <div className="text-xl font-medium">EXPLORE BATCHES</div>
-                    <div className="text-xl font-medium">CONTUCT US</div>
+                    <div>
+                        <p className="text-xl font-medium">COMPANY</p>
+                        <div className="mt-4 flex flex-col gap-y-2 text-slate-600">
+                            <a href=""><span>About Us</span></a>
+                            <a href=""><span>Help & Support</span></a>
+                            <a href=""><span>Join Us</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-xl font-medium">EXPLORE BATCHES</p>
+                        <div className="mt-4 flex flex-col gap-y-2 text-slate-600">
+                            <a href=""><span>SUPER Plan</span></a>
+                            <a href=""><span>FOCUS Batch 2026</span></a>
+                            <a href=""><span>FOCUS Batch 2027</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-xl font-medium">CONTUCT US</p>
+                        <div className="mt-4 flex flex-col text-slate-600">
+                            <p>Student Queries</p>
+                            <a href=""><span>ask@superkalam.com</span></a>
+                            <p className="mt-2">General Queries</p>
+                            <a href=""><span>hello@superkalam.com</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
