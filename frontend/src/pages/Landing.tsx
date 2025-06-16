@@ -13,7 +13,7 @@ import { Footer } from '../components/Footer';
 export const Landing = () => {
     return (
         <>
-            <Header />
+            <Header buttonText='Login' buttonLink='/login' />
 
             <div className='w-full relative'>
                 <div className='mt-2 flex justify-center'>

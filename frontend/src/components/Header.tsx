@@ -1,7 +1,12 @@
 import img1 from "../assets/logo.jpg";
 import { Link } from 'react-router-dom';
 
-export const Header = () => {
+interface HHeaderProps {
+  buttonText: string,
+  buttonLink: string
+}
+
+export const Header: React.FC<HHeaderProps> = ( {buttonText,buttonLink} ) => {
   return (
     <>
       <div className='flex justify-between  '>
@@ -11,8 +16,8 @@ export const Header = () => {
         </div>
         <div className='flex items-center gap-x-12 pt-4 pr-20'>
           <p className='text-[#3280F6] text-lg font-medium hover:bg-blue-50 hover:rounded-4xl hover:p-1'>Explore Batches</p>
-          <Link to="/login">
-            <button className='text-[#3280F6] text-lg font-medium border border-[#3280F6]-1 px-3 py-2 rounded-lg hover:text-white hover:bg-[#3280F6]'>Login</button>
+          <Link to={buttonLink}>
+            <button className='text-[#3280F6] text-lg font-medium border border-[#3280F6]-1 px-3 py-2 rounded-lg hover:text-white hover:bg-[#3280F6]'>{buttonText}</button>
           </Link>
         </div>
       </div>
