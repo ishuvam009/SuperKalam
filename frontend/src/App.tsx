@@ -3,6 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { Landing } from './pages/Landing';
 import { Login } from './pages/Login';
 import { SignUp } from './components/SignUp';
+import { Dashboard } from './pages/Dashboard';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
             <Route path='/' element={<Landing />} />
             <Route path='/login' element={<Login />} />
             <Route path='/signup' element={<SignUp />} />
+            <Route path='/chat' element={<Dashboard />}/>
           </Routes>
         </BrowserRouter>
     </>
