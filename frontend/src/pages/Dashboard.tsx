@@ -4,6 +4,7 @@ import {
   Askicon, MainEvIcon, StarIcon, WidIcon,
   LibIcon, AffirIcon, PracIcon, ProgresIcon, HelpIcon
 } from '../components/Icons';
+import AnimatedMicIcon from '../components/AnimateIcon';
 
 // Sidebar item component
 const SideBarComponent = ({
@@ -33,9 +34,8 @@ export const Dashboard = () => {
     <div className="w-full flex">
       {/* Sidebar */}
       <div
-        className={`${
-          isCollapsed ? 'w-16' : 'w-1/6'
-        } h-screen overflow-y-auto overflow-x-hidden border-r border-slate-500 transition-all duration-300 bg-white`}
+        className={`${isCollapsed ? 'w-16' : 'w-1/6'
+          } h-screen overflow-y-auto overflow-x-hidden border-r border-slate-500 transition-all duration-300 bg-white`}
       >
         {/* Header with toggle */}
         <div className="flex items-center justify-between p-4">
@@ -66,8 +66,13 @@ export const Dashboard = () => {
       {/* Main content */}
       <div className="w-5/6 h-screen overflow-auto p-4">
         <div className='flex flex-col items-center mt-10'>
-          <img className='h-10 w-10' src={icon} alt="" />
-          <p>Wlcome, Name </p>
+          <AnimatedMicIcon/>
+          <p className='text-xl font-medium mt-6'>Welcome, Name! </p>
+        </div>
+        <div className='flex justify-center gap-x-4 mt-4 font-medium'>
+          <button className='px-8 py-2 rounded-md text-white bg-blue-500 cursor-pointer'>LEARN</button>
+          <button className='px-8 py-2 rounded-md text-[#257AF3] border border-[#257AF3] hover:bg-blue-100 cursor-pointer'>PRACTICE</button>
+          <button className='px-8 py-2 rounded-md text-[#257AF3] border border-[#257AF3] hover:bg-blue-100 cursor-pointer'>UPSC 2027 GUIDE</button>
         </div>
       </div>
     </div>
