@@ -5,6 +5,7 @@ import {
   LibIcon, AffirIcon, PracIcon, ProgresIcon, HelpIcon
 } from '../components/Icons';
 import AnimatedMicIcon from '../components/AnimateIcon';
+import { DashChatCompLi, DashChatCompDa } from './DashboardChatCompo';
 
 // Sidebar item component
 const SideBarComponent = ({
@@ -73,6 +74,12 @@ export const Dashboard = () => {
           <button className='px-8 py-2 rounded-md text-white bg-blue-500 cursor-pointer'>LEARN</button>
           <button className='px-8 py-2 rounded-md text-[#257AF3] border border-[#257AF3] hover:bg-blue-100 cursor-pointer'>PRACTICE</button>
           <button className='px-8 py-2 rounded-md text-[#257AF3] border border-[#257AF3] hover:bg-blue-100 cursor-pointer'>UPSC 2027 GUIDE</button>
+        </div>
+        <div className='flex flex-col items-center gap-y-2 mt-10 w-full'>
+          <DashChatCompLi p='Give me' span='Daily News Summary' />
+          <DashChatCompDa p='What is' span='Uniform Civil Code?'/>
+          <DashChatCompDa p='What is' span='C-bot? Explain its application' />
+          <DashChatCompDa p='What is' span='Holistic Progress Card?' />
         </div>
       </div>
     </div>
