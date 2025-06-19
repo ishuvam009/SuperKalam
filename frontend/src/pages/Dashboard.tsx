@@ -65,8 +65,10 @@ export const Dashboard = () => {
 
       {/* Main content */}
       <div className="w-5/6 h-screen overflow-auto p-4">
-        <h1 className="text-xl font-bold">Dashboard Content</h1>
-        {/* Your main content goes here */}
+        <div className='flex flex-col items-center mt-10'>
+          <img className='h-10 w-10' src={icon} alt="" />
+          <p>Wlcome, Name </p>
+        </div>
       </div>
     </div>
   );
