@@ -36,7 +36,7 @@ export const Dashboard = () => {
       {/* Sidebar */}
       <div
         className={`${isCollapsed ? 'w-16' : 'w-1/6'
-          } h-screen overflow-y-auto overflow-x-hidden border-r border-slate-500 transition-all duration-300 bg-white`}
+          } h-screen overflow-y-auto overflow-x-hidden border-r border-slate-500 transition-all duration-300 bg-white px-4`}
       >
         {/* Header with toggle */}
         <div className="flex items-center justify-between p-4">
